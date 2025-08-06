@@ -6,7 +6,9 @@ This is a sophisticated MEV (Maximum Extractable Value) bot designed to execute 
 
 The project is structured into several modules, each with a specific responsibility.
 
-[View Architecture Diagram](https://mermaid.live/edit#pako:eNqNVMFuwyAM_RXBZy1Qh-jaBrrtkUMPAQmHNaomtoBkwqj-fcmO02aHk9AlFtnP_nZ2VvJABoXjBK_F0Kx0bYAyRk_XwZ6C4zQ5wS2CqG0Mkqw5M57p4Z52-j0yVdJDRo0H3R1oG95G24v9wF51uIuE8cQ54Wv9eB2oXmH7UaBfN_VjP0n6i-iRvy8oW3c1Vz3XqKjG-r2D8U-N8Zq9g5H1d5951_Gg6zBw1h42Jm0q8s3vP3jXyWv607F1gV519m1B7M-tY_h4bW5qQyN1Vf3B9rE2t3K7X6kQ2Wl3xH2_fQWc8jX9HjK0V0pX5r-c9H5xM8l93uXmG2G-36h00e84L7K6iX1qQW5G5a9x7Q_UoWc-e9XbFvSg3K3d0W9q9VvT79-9941gWpQz0p_Lq3k99f_H41PzN_r_0d-v-oN_o-A8fR_A)
+**Architecture Diagram**
+
+![Architecture Diagram](architecture.svg)
 
 *   **`main.rs`**: The entry point of the application. It handles configuration, initializes the bot, and orchestrates the different arbitrage strategies.
 *   **`arbitrage`**: Contains the core logic for finding and executing arbitrage opportunities.
@@ -22,7 +24,9 @@ The project is structured into several modules, each with a specific responsibil
 
 The bot follows a multi-stage workflow to discover, monitor, and execute arbitrage opportunities.
 
-[View Workflow Diagram](https://mermaid.live/edit#pako:eNqdVM1uwjAQ_RXLJ20aKCrcoIoSVSMhKSoqD2CuJLFksSN2hKr-veNsAklpUe-e3fn2zOzJ0eQAFQqnGN6ioVnp2gBljJ6uAz0Fx2lyglsEUdsYJFnzzHinhrsH6fXKV0kNGjQfdHWgB3kbbq_2A3nWYi4RxxDnhK_14Hah-YbVRoF839WM_SfqL6JG_LyhbdzVXPdeoyMb6vYPxj43xmr2DkfV333nX8aDrMHDWnjYmLQryze9_eNfJa_rT8XWBXnX2bUHs-61j-HhtbkpDY3VV_cH28Ta3crtfqRDayWfUfb99RZzyNf0eMrRXSlbmv5z0fnEzyX3e5eYbYb7fqHTR7zgvsrqJfWpBbkbln3HtD9ShZz571dsW9KDcrd3Rb2r1W9Pv3733jWBblDPSn8ureT31_8fjU_M3-v_R36_6g3-j4Dx9w_gQ)
+**Workflow Diagram**
+
+![Workflow Diagram](workflow.svg)
 
 1.  **Initialization**: The bot starts by loading configuration from `main.rs` and environment variables. This includes setting the simulation amount, defining token pairs for arbitrage, and enabling/disabling strategies.
 
